@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "NoStake",
+  "version": "0.1",
+  "author": "ejedev",
+  "description": "Get rid of those debt and community chuck stakers.",
+  "content_scripts": [
+  {
+    "matches": [
+      "https://www.twitch.tv/directory/game/Old%20School%20RuneScape"
+    ],
+    "js": ["jquery.min.js", "content.js"]
+  }
+	],
+	"browser_action": {
+		"default_icon": "icon.png"
+	  },
+	  "icons": { 
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
+    },
+	  "background": {
+	"scripts": ["background.js"]
+	}
+}
